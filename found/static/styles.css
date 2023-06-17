@@ -1,0 +1,196 @@
+*{
+    margin : 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #FFF7DF;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_btns {
+    list-style: none;
+    display: flex;
+}
+
+.nav_btns a {
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: #FFCD29;
+    color: black;
+    font-weight: bold;
+    border-radius: 28px;
+    margin: 0px 10px;
+    
+}
+
+#navbar h1 {
+    color: #FFCD29;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.header {
+    padding: 40px;
+    font-size: 50px;
+    color: #294BFF;
+    font-weight: bold;
+}
+#video_link {
+    width: 60%;
+}
+.url {
+    padding: 14px;
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    margin: 20px;
+} 
+.submit {
+    padding: 14px;
+    border: none;
+    font-weight: bold;
+    background-color: #294BFF;
+    color: #FFF7DF;
+    cursor: pointer;
+}
+
+.or {
+    padding: 20px;
+    color: #FFCD29;
+    font-size: 40px;
+}
+label {
+    cursor: pointer;
+    font-weight: bold;
+}
+label > * {
+    padding:20px;
+}
+#inputTag {
+    display: none;
+}
+
+.home {
+    padding: 12px;
+    background-color: #294BFF;
+    font-weight: bold;
+    border: none;
+    margin: 10px;
+}
+
+.arrow i{
+    padding: 30px 20px;
+    color: #294BFF;
+}
+.arrow {
+    text-decoration: none;
+}
+
+.form-register {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end ;
+}
+
+.user_input {
+    padding: 8px;
+    margin: 10px;
+    width: 250px;
+}
+
+.btn-1 {
+    margin: 20px 75px;
+    padding: 12px 50px;
+}
+
+.login-header {
+    color: #294BFF;
+    text-align: center;
+    margin: 150px;    
+    
+}
+
+.index_head {
+    color: #294BFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+    padding: 20px;
+}
+.index_head p {
+    margin: 16px;
+}
+
+.foundit {
+    font-weight: bold;
+    color: #FFCD29;
+}
+.index_form{
+    color: #294BFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.index_form h3 {
+    margin: 20px;
+}
+.index_form a button {
+    padding: 10px;
+    margin: 6px;
+    width: 80px;
+    color: #FFF7DF;
+    background-color: #294BFF;
+    border: none;
+    cursor: pointer;
+}
+.index_form a{
+    color: #FFF7DF;
+    text-decoration: none;
+}
+
+.song-list{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF7DF;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.song-list li {
+    padding: 14px;
+}
+
+.back-home {
+    background-color: #294BFF;
+    padding: 14px;
+    margin: 8px;
+    border: none;
+    color: #FFF7DF;
+    cursor: pointer;
+}

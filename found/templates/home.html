@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+        <nav id = "navbar">
+            <h1>Foundit.</h1>
+            <ul class="nav_btns">
+                <li>
+                    <a href="{{ url_for('songs') }}">Identified songs</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('logout') }}">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <main id = "content">
+            <h1 class="header">Find those songs <br> that blew your mind in a movie</h1>
+            <form action="/upload" method="post" class="upload" enctype="multipart/form-data">
+                {{form.hidden_tag()}}
+                {{form.file()}}
+                {{form.submit()}}
+            </form>
+        </main>
+{% endblock %}

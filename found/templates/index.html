@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+    <div class="index_head">
+        <h1>Welcome to <span class="foundit">Foundit!</span></h1>
+        <p>with <span class="foundit">Foundit</span> you can find any song that you've heard either on a video or a movie, or maybe you even have the audio file but you want to figure out which song is it.</p>
+    </div>
+    <div class="index_form">
+        <h3>You would have to login before you can use <span class="foundit">Foundit</span></h3>
+        <a href="{{ url_for('register') }}"><button>Register</button></a>
+        <a href="{{ url_for('login') }}"><button>Login</button></a>
+    </div>
+
+{% endblock %}

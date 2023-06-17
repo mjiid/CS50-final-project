@@ -1,0 +1,1 @@
+# This folder contains all the templates used in the project, and in order to avoid repeating our selves (DRY), We used a templating language called "JINJA2" which is used to make a general layout for the pages then modify to get different pages

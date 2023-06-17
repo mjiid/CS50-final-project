@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+    <form class="form-register" method="post">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <h3 style="color: red; margin: 10px; margin-right:30px;">{{ message }}</h3>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        {{ form.hidden_tag() }}
+        <div>
+                {{ form.username.label() }}
+                {{ form.username(class="user_input", placeholder="Username") }}
+        </div>
+        
+        <div>
+                {{ form.email.label() }}
+                {{ form.email(class="user_input", placeholder="Email")}}
+        </div>
+        
+        <div>
+                {{ form.password1.label() }}
+                {{ form.password1(class="user_input", placeholder="Password")}}
+        </div>
+        
+        <div>
+                {{ form.password2.label() }}
+                {{ form.password2(class="user_input", placeholder = "Confirmation")}}
+        </div>
+        
+        {{ form.submit(class="submit btn-1") }}
+        <h5 style="margin: 10px; margin-right:40px;">I already have an account  <a href="{{ url_for('login') }}">Login</a></h5>
+    </form>
+    
+{% endblock %}
